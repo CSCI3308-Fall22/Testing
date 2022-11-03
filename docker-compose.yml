@@ -14,7 +14,7 @@
 services:
   # This section defines our Node.js image [3].
   web:
-    image: "node:${NODE_VERSION:-14}"
+    image: node:lts
     user: "node"                            # Use a non-root user node
     working_dir: /home/node/app             # with home directory /home/node/app
     # environment:
